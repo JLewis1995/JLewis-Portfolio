@@ -5,93 +5,152 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    margin: 0;
     min-height: 100vh;
-    justify-content: flex-start;
     background-image: url("../images/SE.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 nav {
     display: flex;
-    flex-flow: row wrap;
     position: fixed;
     justify-content: right;
     top: 0;
     background-color: steelblue;
-    border-bottom: solid .75rem grey;
+    border-bottom: solid 1rem grey;
     width: 100%;
-    height: 3rem;
+    height: 5rem;
+    align-items:center;
+}
+
+nav a {
+    text-decoration: none;
+    color: skyblue;
+    padding:2rem 1rem;
+    text-align: right;
+    gap: 1.25rem ;
+    font-size: 1.3rem;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     flex-grow: 1;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 5rem .5rem 1rem .5rem;
 }
 
-aside {
-    flex: 1;
-    left: 1.5rem;
-    margin-top: 5rem;
+footer {
+    width: 100%;
+    bottom: 0; 
+    padding: 10px;
+    background-color: grey;
+    margin-top: auto;
     text-align: center;
-    padding: 3rem;
-    max-width: 25%;
 }
 
 aside img {
-    max-width: 100%;
+    max-width: 60%;
 }
 
 a:hover {
     color: white;
 }
 
-nav ul {
+.nameContainer {
     display: flex;
-    list-style-type: none;
-    align-items:center;
-    gap: 1.25rem ;
-    margin-right: 2rem;
-}
-
-a {
-    text-decoration: none;
-    color: skyblue;
-}
-
-footer {
+    height: 2rem;
     width: 100%;
-    bottom: 0; 
-    padding: 1rem;
-    background-color: grey;
-    margin-top: auto;
+    margin: 3rem 0rem 3rem 1rem;
+    justify-content: left;
+}
+
+.pictureContainer {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 25rem;
+    margin: 8rem 2rem 2rem 1rem;
+}
+
+.aboutContainer {
+    display: flex;
+    width: 65%;
+    margin: 1rem;
+    flex-direction: row;
+    max-height: 20rem;
+    justify-content:space-evenly;
+}
+
+.workContainer {
+    display: flex;
+    width: 65%;
+    margin: 1rem;
+    flex-direction: row;
+    max-height: 20rem;
+    justify-content:space-evenly;
+}
+
+#nameCard {
+    font-size: 2.25rem;
+    width: 25%;
     text-align: center;
 }
 
-.about {
-    flex: 2;
-    padding: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 70%;
-    max-height: 20%;
+#aboutME {
+    border: solid 2px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    height: 10rem;
+    width: 14rem;
 }
 
-
-#aboutTitle {
-    background-color: grey;
-    max-width: 25%;
-    flex-shrink: .5;
-    font-size: 2rem;
-    justify-content: space-around;
+#myWork {
+    border: solid 2px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    height: 10rem;
+    width: 65%;
+    margin-left: 25rem;
+    text-align: center;
 }
 
-#aboutSection {
-    background-color: grey;
-    flex-shrink: 1.25;
+#work1 {
+    width: 65%;
+    height: 15rem;
     text-align: left;
-    padding-left: 1rem;
-    justify-content: space-around;
+    top:.25rem;
+}
+
+.card {
+    border:solid 2px;
+    padding: 1rem;
+    max-height: 10rem;
+    flex: 0 0 200px;
+    text-align: left;
+}
+
+.card h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+#myWork h1 {
+    text-align: center;
+}
+
+#aboutME h1 {
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    main,
+    nav {
+        flex-direction: column;
+    }
 }

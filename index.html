@@ -9,54 +9,63 @@
     <body>
         <!-- Nav Bar -->
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">My Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">My Work</a>
+            <a href="#contact">Contact Me</a>
         </nav>
         
         <!-- Body -->
         <main>
-            <!-- Side Bar (Name & Image) -->
-            <aside>
-                <div id="nameTitle">
+            <div class="nameContainer">
+                <section id="nameCard">
                     <h1>Jacob L. Lewis</h1>
-                    <h3>Portfolio</h3>
-                </div>
-                <div id="imgJL"><img src="./assets/images/JL.jpg" alt="Photo of Jacob L. Lewis"></div>
+                </section>
+            </div>
+
+            <aside class="pictureContainer">
+                <img src="./assets/images/JL.jpg" alt="Photo of Jacob L. Lewis">
             </aside>
 
-            <div class="about">
-                <section  id="aboutTitle">
-                    <p>About Me</p>
+            <div class="aboutContainer">
+                <section id="aboutME">
+                    <h1>About Me</h1>
                 </section>
-                <section id="aboutSection">
-                    <p>This is a paragraph about me</p>
+                <section class="card">
+                    <h1>Professional</h1>
+                    <p>Professional</p>
+                </section>
+                <section class="card">
+                    <h1>Education</h1>
+                    <p>Educational</p>
+                </section>
+                <section class="card">
+                    <h1>Entertainment</h1>
+                    <p>For Fun!</p>
                 </section>
             </div>
             
 
-            <div class="tiles"></div>
-                <div id="work">
-                    <div></div>
-                </div>
-            </div>
-
-
-            <div id="contact">
-                <!-- insert LinkdIN profile here -->
-                <div id="linkdIN"><a href="#">LinkdIn</a></div>
-                <!-- insert github profile here -->
-                <div id="gitHub"><a href="#">GitHub</a></div>
-                <!-- Email -->
-                <div id="email"><a href="#">Email goes here</a></div>
+            <div class="workContainer"></div>
+                <section id="myWork">
+                    <h1>My Work</h1>
+                </section>
+                <section id="work1">
+                    <h1>Work1</h1>
+                </section>
+                <section class="card">
+                    <h1>work2</h1>
+                </section>
+                <section class="card">
+                    <h1>work3</h1>
+                </section>
             </div>
     </main>
         
         <footer>
-            <h5>Footer goes here</h5>
+            <a href="#">LinkdIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Email</a>
         </footer>
         
     </body>
