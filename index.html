@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="./assets/css/style.css">
         <title>Jacob Lewis Portfolio</title>
     </head>
-    
     <body>
-        <section>
+        <!-- Nav Bar -->
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">My Work</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
-        </section>
+        </nav>
         
-        <div id="JLflex">
-            <header>
-                <h1>Jacob L. Lewis</h1>
-                <h3>Portfolio</h3>
-            </header>
+        <!-- Body -->
+        <main>
+            <!-- Side Bar (Name & Image) -->
+            <aside>
+                <div id="nameTitle">
+                    <h1>Jacob L. Lewis</h1>
+                    <h3>Portfolio</h3>
+                </div>
+                <div id="imgJL"><img src="./assets/images/JL.jpg" alt="Photo of Jacob L. Lewis"></div>
+            </aside>
 
-            <div id="imgJL">
-                <img src="./assets/images/JL.jpg" alt="Photo of Jacob L. Lewis">
+            <div class="about">
+                <section  id="aboutTitle">
+                    <p>About Me</p>
+                </section>
+                <section id="aboutSection">
+                    <p>This is a paragraph about me</p>
+                </section>
             </div>
-        </div>
+            
 
-        <div id="about">
-            <p>THIS IS WHERE I PUT AN ABOUT ME</p>
-        </div>
+            <div class="tiles"></div>
+                <div id="work">
+                    <div></div>
+                </div>
+            </div>
+
+
+            <div id="contact">
+                <!-- insert LinkdIN profile here -->
+                <div id="linkdIN"><a href="#">LinkdIn</a></div>
+                <!-- insert github profile here -->
+                <div id="gitHub"><a href="#">GitHub</a></div>
+                <!-- Email -->
+                <div id="email"><a href="#">Email goes here</a></div>
+            </div>
+    </main>
         
-        <div id="contact">
-            <!-- insert LinkdIN profile here -->
-            <div id="linkdIN"><a href="#"></a></div>
-            <!-- insert github profile here -->
-            <div id="gitHub"><a href="#"></a></div>
-        </div>
-
-
-        <div id="projects">
-            <div></div>
-        </div>
+        <footer>
+            <h5>Footer goes here</h5>
+        </footer>
         
     </body>
 </html>

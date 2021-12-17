@@ -1,47 +1,54 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: garamond;
     color: white;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-image: url("../images/SE.jpg");
+    background-size: cover;
 }
 
-section {
+nav {
     display: flex;
     flex-flow: row wrap;
     position: fixed;
     justify-content: right;
     top: 0;
     background-color: steelblue;
-    border-bottom: solid 1px grey;
+    border-bottom: solid .75rem grey;
     width: 100%;
-    height: 40px;
+    height: 3rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+aside {
+    flex: 1;
+    left: 1.5rem;
+    margin-top: 5rem;
+    text-align: center;
+    padding: 3rem;
+    max-width: 25%;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+a:hover {
     color: white;
 }
 
-header {
-    position: relative;
-    left: 1.5rem;
-    margin-top: 65px;
-    background-color: grey;
-    text-align: center;
-    width: 100%;
-}
-
-#JLflex {
-    position: relative;
-    width: 25%;
-    align-items: left;
-}
-
-img {
-    position: absolute;
-    max-width: 100%;
-    left: 1.5rem;
-}
-
-section ul {
+nav ul {
     display: flex;
     list-style-type: none;
     align-items:center;
@@ -52,4 +59,39 @@ section ul {
 a {
     text-decoration: none;
     color: skyblue;
+}
+
+footer {
+    width: 100%;
+    bottom: 0; 
+    padding: 1rem;
+    background-color: grey;
+    margin-top: auto;
+    text-align: center;
+}
+
+.about {
+    flex: 2;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 70%;
+    max-height: 20%;
+}
+
+
+#aboutTitle {
+    background-color: grey;
+    max-width: 25%;
+    flex-shrink: .5;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+
+#aboutSection {
+    background-color: grey;
+    flex-shrink: 1.25;
+    text-align: left;
+    padding-left: 1rem;
+    justify-content: space-around;
 }
