@@ -24,7 +24,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: skyblue;
+    color: rgb(185, 223, 238);
     padding:2rem 1rem;
     text-align: right;
     gap: 1.25rem ;
@@ -43,7 +43,7 @@ aside {
     max-width: 400px;
     margin: 0px 20px;
     text-align: right;
-    flex: 1;
+    flex: none;
 }
 
 aside h1 {
@@ -52,6 +52,11 @@ aside h1 {
 
 aside img {
       width: 100%;
+  }
+
+.container  img {
+    max-height: 200px;
+    width: 100%;
   }
 
 footer {
@@ -80,31 +85,41 @@ a:hover {
 .container {
     max-width: 100%;
     max-height: 800px;
-    flex: 4;
+    flex: 3;
     padding: 10px 50px 50px 50px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: left;
     align-items: flex-start;
   }
 
 .abtCard {
     margin: 25px;
-  max-width: 83%;
-  flex: auto;
+  max-width: 80%;
+  height: 750px;
 }
 
 .bigCard {
     margin: 25px;
+    max-width: 200px;
     border-right: solid white 6px;
 }
 
 .primWorkCard {
-
+    border-style: solid;
+    border-width: 5px;
+    flex: 0 1 1000px;
+    margin: 30px;
+    text-align: center;
+    background-color: grey;
 }
 
 .workCard {
-
+    border-style: solid;
+    border-width: 5px;
+    background-color: grey;
+    margin: 30px;
+    flex: 0 0 600px;
+    text-align: center;
 }
 
 section h1 {
@@ -119,7 +134,18 @@ p {
     text-align: left;
 }
 
-@media screen and (max-width:768px) {
+.container a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1235px) {
+    .primWorkCard {
+        flex: 0 0 600px;
+    }
+    
+}
+@media screen and (max-width:988px) {
     main,
     nav,
     nav a {
@@ -127,4 +153,5 @@ p {
         text-align: center;
         justify-content: center;
     }
+
 }
