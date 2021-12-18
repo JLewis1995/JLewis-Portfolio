@@ -106,21 +106,42 @@ a:hover {
 }
 
 .primWorkCard {
-    border: solid 5px rgb(1, 255, 1);
-    flex: 0 2 80%;
-    margin: 30px;
-    text-align: center;
-    background-color: black;
+    margin: 25px;
+    flex: 0 2 100%;
+    padding: 10px;
+    display: flex;
+}
+
+.primWorkCard h1 {
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 10px;
+    border-right: rgb(1, 255, 1) solid 6px;
+}
+
+.primWorkCard a {
     color: white;
+    background-color: black;
+    text-align: center;
+    border: solid 5px rgb(1, 255, 1);
+    width: 100%;
+    margin-left: 20px;
 }
 
 .workCard {
     border: solid 5px rgb(1, 255, 1);
     background-color: black;
     margin: 30px;
-    flex: 0 2 50%;
+    flex: 1 2 30%;
     text-align: center;
     color: white;
+}
+
+.workCard a {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 45%;
 }
 
 .abtCard h1 {
@@ -148,15 +169,16 @@ a:hover {
 }
 
 @media screen and (max-width: 1235px) {
-    .primWorkCard {
-        flex: 0 0 600px;
-    }
-}
-
-@media screen and (max-width:1075px) {
-    .container{
-        flex-direction: row nowrap;
+    aside {
+        max-width: 85%;
+        max-height: 1500px;
         justify-content: center;
+    }
+    .primWorkCard {
+        flex: 0 0 800px;
+    }
+    .workCard {
+        flex: 1 0 400px;
     }
 }
 
@@ -179,5 +201,11 @@ a:hover {
         max-width: 100%;
         text-align: center;
         max-height: 1600px;
+    }
+    .container {
+        flex-direction: column wrap;
+    }
+    .primWorkCard {
+        flex: 2 0 400px;
     }
 }
