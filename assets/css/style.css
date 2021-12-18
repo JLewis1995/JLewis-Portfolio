@@ -1,6 +1,5 @@
 * {
     font-family: garamond;
-    color: white;
     box-sizing: border-box;
 }
 
@@ -10,21 +9,25 @@ body {
     flex-direction: column;    
     min-height: 100vh;
     justify-content: flex-start;
-    background-image: url("../images/SE.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(232, 236, 248);
+    background-image: url("../images/SE2.jpg");
+    background-size: 100% 400px;
+    background-position: top;
+    background-repeat: no-repeat;
+    
 }
 
 nav {
     display: flex;
     justify-content: right;
-    background-color: steelblue;
-    border-bottom: solid 10px grey;
+    background-color: black;
+    border-bottom: solid 10px rgb(1, 255, 1);
+    margin-bottom: 200px;
 }
 
 nav a {
     text-decoration: none;
-    color: rgb(185, 223, 238);
+    color: white;
     padding:2rem 1rem;
     text-align: right;
     gap: 1.25rem ;
@@ -39,11 +42,12 @@ main {
 }
 
 aside {
-    max-height: 1000px;
-    max-width: 400px;
+    max-height: 700px;
+    max-width: 25%;
     margin: 0px 20px;
     text-align: right;
     flex: none;
+    padding-right: 10px;
 }
 
 aside h1 {
@@ -56,7 +60,7 @@ aside img {
 
 .container  img {
     max-height: 200px;
-    width: 100%;
+    width: 98%;
   }
 
 footer {
@@ -64,11 +68,12 @@ footer {
     position: fixed;
     justify-content: space-evenly;
     bottom: 0;
-    background-color: grey;
-    border-top: steelblue 5px solid;
+    background-color: black;
+    border-top: rgb(1, 255, 1) 5px solid;
     width: 100%;
     height: 40px;
     align-items: center;
+    color: white;
 }
 
 footer a {
@@ -76,16 +81,17 @@ footer a {
     text-align: center;
     gap: 1.25rem;
     font-size: 1rem;
+    color: white;
 }
 
 a:hover {
-    color: white;
+    color: rgb(1, 255, 1);
 }
 
 .container {
     max-width: 100%;
     max-height: 800px;
-    flex: 3;
+    flex: 4;
     padding: 10px 50px 50px 50px;
     display: flex;
     flex-flow: row wrap;
@@ -94,42 +100,39 @@ a:hover {
 
 .abtCard {
     margin: 25px;
-  max-width: 80%;
-  height: 750px;
-}
-
-.bigCard {
-    margin: 25px;
-    max-width: 200px;
-    border-right: solid white 6px;
+  flex: 0 2 100%;
+  padding: 10px;
+  display: flex;
 }
 
 .primWorkCard {
-    border-style: solid;
-    border-width: 5px;
-    flex: 0 1 1000px;
+    border: solid 5px rgb(1, 255, 1);
+    flex: 0 2 80%;
     margin: 30px;
     text-align: center;
-    background-color: grey;
+    background-color: black;
+    color: white;
 }
 
 .workCard {
-    border-style: solid;
-    border-width: 5px;
-    background-color: grey;
+    border: solid 5px rgb(1, 255, 1);
+    background-color: black;
     margin: 30px;
-    flex: 0 0 600px;
+    flex: 0 2 50%;
     text-align: center;
+    color: white;
 }
 
-section h1 {
-    padding: 10px;
-    text-align: center;
+.abtCard h1 {
+    font-size: 30px;
+    text-align: right;
+    padding: 10px 10px;
+    border-right: rgb(1, 255, 1) solid 6px;
 }
 
-p {
+.abtCard p {
     font-size: 20px;
-    margin: 0;
+    margin: 5px 5px 5px 20px;
     gap: 1rem;
     text-align: left;
 }
@@ -137,14 +140,26 @@ p {
 .container a {
     font-size: 30px;
     text-decoration: none;
+    color: white;
+}
+
+.container a:hover {
+    color: rgb(1, 255, 1);
 }
 
 @media screen and (max-width: 1235px) {
     .primWorkCard {
         flex: 0 0 600px;
     }
-    
 }
+
+@media screen and (max-width:1075px) {
+    .container{
+        flex-direction: row nowrap;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width:988px) {
     main,
     nav,
@@ -153,5 +168,16 @@ p {
         text-align: center;
         justify-content: center;
     }
-
+    body {
+        background-image: none;
+        
+    }
+    nav {
+        margin-bottom: 0px;
+    }
+    aside {
+        max-width: 100%;
+        text-align: center;
+        max-height: 1600px;
+    }
 }
