@@ -164,10 +164,34 @@ a:hover {
     color: rgb(1, 255, 1);
 }
 
+#tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+#tooltip #tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -350px;
+    z-index: 1;
+    font-size: 1.5rem;
+}
+
+#tooltip:hover #tooltiptext {
+    visibility: visible;
+}
+
 @media screen and (min-width: 768px) {
     nav {
         flex-flow: row wrap;
-        justify-content: right;
+        justify-content: space-evenly;
     }
 }
 
