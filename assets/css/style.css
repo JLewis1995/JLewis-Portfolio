@@ -1,10 +1,11 @@
-* {
-    font-family: garamond;
-    box-sizing: border-box;
-}
-
-.container img:hover {
-    opacity: 1;
+/* creating varriables for commonly used items in this CSS sheet */
+:root {
+    --fnt: font-family: garamond;
+    --bkgclr:rgb(232, 236, 248);
+    --blkbkg:black;
+    --bdr: solid 6px;
+    --whtfnt: white;
+    --green: rgb(1, 255, 1)
 }
 
 body {
@@ -13,65 +14,60 @@ body {
     flex-direction: column;    
     min-height: 100vh;
     justify-content: flex-start;
-    background-color: rgb(232, 236, 248);
+    background-color: var(--bkgclr);
+    color: var(--fnt);
+    box-sizing: border-box;
     
 }
 
 nav {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    background-color: black;
-    border-bottom: solid 10px rgb(1, 255, 1);
+    background-color: var(--blkbkg);
+    border-bottom: var(--bdr) var(--green);
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--whtfnt);
     padding:2rem 1rem;
     text-align: center;
     gap: 1.25rem ;
     font-size: 1.3rem;
 }
 
-main {
-    display: flex;
-    flex-flow: row wrap;
-    flex: 1 1 100%;
-    justify-content: center;
-}
-
 aside {
-    max-width: 95%;
+    width: 95%;
     text-align: center;
 }
 
-aside h1 {
-    font-size: 40px;
+img {
+    width: 98%;
 }
-
-aside img {
-      width: 100%;
-  }
 
 .container  img {
     max-height: 200px;
-    width: 98%;
     opacity: .65;
-  }
+}
+
+.container img:hover {
+    opacity: 1;
+}
+
+.wide {
+    width: 100%;
+}
 
 footer {
-    display: flex;
     position: fixed;
     justify-content: space-evenly;
     bottom: 0;
     margin-top: auto;
-    background-color: black;
-    border-top: rgb(1, 255, 1) 5px solid;
-    width: 100%;
+    background-color: var(--blkbkg);
+    border-top: var(--bdr) var(--green);
     height: 40px;
     align-items: center;
-    color: white;
+    color: var(--whtfnt);
 }
 
 footer a {
@@ -79,89 +75,86 @@ footer a {
     text-align: center;
     gap: 1.25rem;
     font-size: 1rem;
-    color: white;
+    color: var(--whtfnt);
+}
+
+a {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
 }
 
 a:hover {
-    color: rgb(1, 255, 1);
+    color: var(--green);
 }
 
 .container {
-    max-width: 100%;
     flex: 4;
     padding: 50px 50px 50px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-  }
+}
 
 .abtCard {
     margin: 25px;
-  flex: 0 2 100%;
   padding: 10px;
   display: flex;
 }
 
 .primWorkCard {
     margin: 30px;
-    flex: 0 2 100%;
-    display: flex;
-    flex-flow: row wrap;    
 }
 
 .primWorkCard h1 {
-    font-size: 30px;
     text-align: center;
-    width: 100%;
-    border-bottom: rgb(1, 255, 1) solid 6px;
+    border-bottom: var(--bdr) var(--green);
 }
 
 .primWorkCard a {
-    color: white;
-    background-color: black;
+    color: var(--whtfnt);
+    background-color: var(--blkbkg);
     text-align: center;
-    border: solid 5px rgb(1, 255, 1);
-    width: 100%;
+    border: var(--bdr) var(--green);
 }
 
 .workCard {
-    border: solid 5px rgb(1, 255, 1);
-    background-color: black;
+    border: var(--bdr) var(--green);
+    background-color: var(--blkbkg);
     margin: 30px;
-    flex: 1 2 35%;
     text-align: center;
-    color: white;
+    color: var(--whtfnt);
+    flex:100%;
 }
 
 .workCard a {
-    color: white;
-    background-color: black;
+    color: var(--whtfnt);
+    background-color: var(--blkbkg);
     text-align: center;
-    width: 45%;
+    width: 100%;
 }
 
 .abtCard h1 {
-    font-size: 30px;
     text-align: right;
     padding: 10px 10px;
-    border-right: rgb(1, 255, 1) solid 6px;
+    border-right: var(--bdr) var(--green);
 }
 
 .abtCard p {
-    font-size: 20px;
     margin: 5px 5px 5px 20px;
-    gap: 1rem;
     text-align: left;
 }
 
 .container a {
-    font-size: 30px;
     text-decoration: none;
-    color: white;
+    color: var(--whtfnt);
 }
 
 .container a:hover {
-    color: rgb(1, 255, 1);
+    color: var(--green);
 }
 
 #tooltip {
@@ -172,9 +165,9 @@ a:hover {
 #tooltip #tooltiptext {
     visibility: hidden;
     width: 350px;
-    background-color: white;
-    color: black;
-    border: solid black 2px;
+    background-color: var(--whtfnt);
+    color: var(--blkbkg);
+    border: var(--bdr) black;
     text-align: center;
     padding: 5px;
     position: absolute;
@@ -188,6 +181,20 @@ a:hover {
     visibility: visible;
 }
 
+.rowWrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.center {
+    justify-content: center;
+}
+
+.nmlflx {
+    flex:100%
+}
+
+/* Tablet size - make nav full width and single row of links */
 @media screen and (min-width: 768px) {
     nav {
         flex-flow: row wrap;
@@ -195,6 +202,7 @@ a:hover {
     }
 }
 
+/* full size - add banner image, position sidebar (aside), and allow tiles to fall into intended place */
 @media screen and (min-width: 998px) {
     body {
     background-image: url("../images/SE2.jpg");
@@ -215,5 +223,8 @@ a:hover {
     }
     .container {
         margin-top: 100px;
+    }
+    .workCard {
+        flex: 35%;
     }
 }
