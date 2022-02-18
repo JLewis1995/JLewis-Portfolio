@@ -1,76 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Jacob Lewis Portfolio</title>
-        <link rel="icon" href="./assets/images/SE.jpg">
-    </head>
-    <body>
-        <!-- Nav Bar -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#aboutME">About Me</a>
-            <a href="#myWork">My Work</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
-        
-        <!-- Body -->
-        <main class="rowWrap center nmlflx">
-                <!-- Sidebar with Name and Image -->
-            <aside>
-                <h1>Jacob L. Lewis</h1>
-                <div><img src="./assets/images/JL.jpg" alt="Photo of Jacob L. Lewis"></div>
-            </aside>
-            <!-- Main container for About Me section and Work Cards -->
-            <div class="container rowWrap wide">
-                <!-- Single card so both paragraphs move together -->
-                <section class="abtCard nmlflx">
-                    <h1 id="aboutME">About Me</h1>
-                    <p>I am an experienced leader with a demonstrated history working in the financial services industry. Skilled in attracting and developing talent, strategic planning, process improvement, innovation, and retail sales environment psychology. Experience in project management, strategic change, networking and resource management. Leaders have described me as coachable, self-motivated, efficient, autonomous, forward thinking, genuine and dependable. Currently pursuing additional education in web/software development through University of Denver's Coding Bootcamp & Microsoft Azure training courses.</p>
-                    <br />
-                    <p>In my free time I love to snowboard and overland with my dog and friends. I moved to Colorado four years ago, from Wichita, KS, to continue my careeer in the financial services industry. I am currenlty looking to transition that experience into a DevOps Engineer position within the company I currently work for. I love Formula 1 and the NFL. My favorite driver is Max Verstappen and my favorite NFL team is the Kansas City Chiefs.</p>
-                </section>
-                <!-- Work Section -->
-                <!-- Primary project as seperate -->
-                <section class="primWorkCard nmlflx rowWrap">
-                    <h1 class="wide" id="myWork">My Work</h1>
-                    <a class="wide" href="https://djmarcy.github.io/palabra/" target="_blank">Palabra Group Project<img src="./assets/images/proj1.jpg" alt="Image of Primary Project on Display"></a>
-                </section>
-                <!-- Second Project -->
-                <section class="workCard">
-                    <a href="index.html">Portfolio Project<img src="./assets/images/proj2.jpg" alt="Image of Second Project on Display"></a>
-                </section>
-                <!-- Third Project -->
-                <section class="workCard">
-                    <a href="https://jlewis1995.github.io/Password-Generator/" target="_blank">Password Generator<img src="./assets/images/proj2.jpg" alt="Image of Third Project on Display"></a>
-                </section>
-                <!-- Fourth Project -->
-                <section class="workCard">
-                    <a href="https://jlewis1995.github.io/WeatherStation/">WeatherStation<img src="./assets/images/proj2.jpg" alt="Image of Fourth Project on Display"></a>
-                </section>
-                <!-- Fifth Project -->
-                <section class="workCard">
-                    <a href="#">Fifth Project<img src="./assets/images/proj2.jpg" alt="Image of Fifth Project on Display"></a>
-                </section>
-            </div> 
-    </main>
-    <!-- Footer for Contact info -->
-    <footer class="rowWrap wide" id="contact">
-        <!-- LinkdIN will work - new tab -->
-        <a href="https://www.linkedin.com/in/jacob-lewis-11312a194/"target="_blank">LinkdIn</a>
-        <!-- GitHub will work - new tab -->
-        <a href="https://github.com/JLewis1995"target="_blank">GitHub</a>
-        <!-- Email will not work -->
-        <a href="#">Email</a>
-        <!-- Twitch will work - new tab -->
-        <a href="https://www.twitch.tv/silent_effects"target="_blank">Twitch</a>
-        <!-- YouTube will work - new tab -->
-        <a href="https://www.youtube.com/channel/UCVZaQtyqhyfH3AEpX-ZxXfw" target="_blank">YouTube</a>
-        <!-- Tooltip! Hover to show tooltiptext -->
-        <a href="#" id="tooltip">Discord<span id="tooltiptext">SilentEffects#4047</span></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <title>Jacob Lewis Portfolio</title>
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <nav class="nav justify-content-end bg-secondary bg-opacity-50 fs-2">
+    <li class="nav-item p-2">
+      <a class="nav-link btn btn-light font-weight-bold border rounded" href="index.html">Home</a>
+    </li>
+    <li class="nav-item p-2">
+      <a class="nav-link btn btn-light font-weight-bold border rounded" href="./aboutMe.html">About
+        Me</a>
+    </li>
+    <li class="nav-item p-2">
+      <a class="nav-link btn btn-light font-weight-bold border rounded" href="#myWork">My Work</a>
+    </li>
+  </nav>
+
+  <!-- main container -->
+  <div class="container mt-4 text-center">
+    <!-- main SINGLE row (for image size) -->
+    <div class="row">
+      <div class="col-4">
+        <img class="img-fluid p-2" src="./assets/images/1.jpg" alt="Photo of Jacob Lewis" />
+        <br></br>
+        <img class="img-fluid p-2" src="./assets/images/JL.jpg" alt="Second Photo of Jacob Lewis" />
+      </div>
+
+      <!-- right half - sub "table" -->
+      <div class="col-8">
+        <!-- top row -->
+        <div class="row">
+          <div class="col py-4">
+            <!-- use card for about me -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Jacob L. Lewis</h1>
+                <p class="lead">Associate DevOps Engineer</p>
+                <p class="lead">Prev. Branch Supervisor</p>
+                <hr class="my-4" />
+                <p>
+                  Thank you for visiting my page!
+                </p>
+                <p>
+                  By clicking the button below, you will be directed to another page where you will find an About Me
+                  section, my current resume, as well as links to my LinkedIn and GitHub Profiles.
+                </p>
+                <p>
+                  Below you will find some of my work. Please visit my About Me Page for a link to my GitHub Profile with more of my work.
+                </p>
+                <a class="btn btn-primary btn-lg" href="./aboutMe.html" role="button">About Me Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row" id="myWork">
+          <div class="col-12">
+            <h2 class="pb-2 border-bottom">My Work</h2>
+          </div>
+          <!-- Main Work Row - Row 3 - Main Project on Display -->
+          <div class="col py-4">
+            <!-- Project 1 -->
+            <div class="card mx-auto w-50" style="width: 18rem">
+              <img src="./assets/images/palabra.PNG" class="card-img-top" alt="Image for First Project on display" />
+              <div class="card-body">
+                <h5 class="card-title">Palabra!</h5>
+                <p class="card-text">
+                  Palabra is a group project I worked on where a random word
+                  is generated on page load. Upon user input and pressing the
+                  button, either the definition or similar words are displayed
+                  on page.
+                </p>
+                <a href="https://djmarcy.github.io/palabra/" target="_blank" class="btn btn-primary m-1">Try it Out!</a>
+                <a href="https://github.com/djmarcy/palabra" target="_blank" class="btn btn-primary m-1">Access the
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row">
+          <!-- Middle Left -->
+          <div class="col-6 py-4">
+            <!-- Project 2 -->
+            <div class="card" style="width: 18rem">
+              <img src="./assets/images/weather.PNG" class="card-img-top" alt="Image for Second Project on display" />
+              <div class="card-body">
+                <h5 class="card-title">Weather Dashboard</h5>
+                <p class="card-text">
+                  Weather Dashboard is an web page that displays current and future weather for a user requested city.
+                </p>
+                <a href="https://jlewis1995.github.io/WeatherStation/" target="_blank" class="btn btn-primary m-1">Try
+                  it Out!</a>
+                <a href="https://github.com/JLewis1995/WeatherStation" target="_blank"
+                  class="btn btn-primary m-1">Access the
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle Right -->
+          <div class="col-6 py-4">
+            <!-- Project 3 -->
+            <div class="card" style="width: 18rem">
+              <img src="./assets/images/password.png" class="card-img-top" alt="Image for Third Project on display" />
+              <div class="card-body">
+                <h5 class="card-title">Password Generator</h5>
+                <p class="card-text">
+                  Password Generator is a web page that upon pressing the button on page, will prompt the user for
+                  parameters and generate a password based upon those inputs.
+                </p>
+                <a href="https://jlewis1995.github.io/Password-Generator/" target="_blank"
+                  class="btn btn-primary m-1">Try it Out!</a>
+                <a href="https://github.com/JLewis1995/Password-Generator" target="_blank"
+                  class="btn btn-primary m-1">Access the
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom row - Row 5 -->
+        <div class="row">
+          <!-- Bottom Left -->
+          <div class="col-6">
+            <!-- Project 4 -->
+            <div class="card" style="width: 18rem">
+              <img src="./assets/images/daily.PNG" class="card-img-top" alt="Image for Fourth Project on display" />
+              <div class="card-body">
+                <h5 class="card-title">Daily Planer</h5>
+                <p class="card-text">
+                  Daily Planner is a daily scheduler for the given day. On page you will see time-blocks for each
+                  working hour of the day. Depending on the current time, the color of the respective time-block will
+                  change. Events will also be saved to local storage.
+                </p>
+                <a href="https://jlewis1995.github.io/Daily-Planner/" target="_blank" class="btn btn-primary m-1">Try it
+                  Out!</a>
+                <a href="https://github.com/JLewis1995/Daily-Planner" target="_blank" class="btn btn-primary m-1">Access
+                  the
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Right -->
+          <div class="col-6">
+            <!-- Project 5 -->
+            <div class="card" style="width: 18rem">
+              <img src="./assets/images/quiz.PNG" class="card-img-top" alt="Image for Fifth Project on display" />
+              <div class="card-body">
+                <h5 class="card-title">Javascript Quiz</h5>
+                <p class="card-text">
+                  Javascript Quiz is a simple, four question quiz about javascript, just for fun.
+                </p>
+                <a href="https://jlewis1995.github.io/JavascriptQuiz/" target="_blank" class="btn btn-primary m-1">Try
+                  it Out!</a>
+                <a href="https://github.com/JLewis1995/JavascriptQuiz" target="_blank"
+                  class="btn btn-primary m-1">Access the
+                  Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="text-muted">© 2022, Jacob L. Lewis</span>
+      </div>
     </footer>
-    
-    </body>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
