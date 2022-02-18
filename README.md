@@ -4,4 +4,4 @@ Within you will find a recent photo of Jacob, a short description of him, his co
 
 This page will interact with different sized browsers, try it out!
 
-https://jlewis1995.github.io/JLewis-Second-Homework---Portfolio/
+https://jlewis1995.github.io/JLewis-Portfolio/
