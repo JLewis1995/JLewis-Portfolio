@@ -1,7 +1,7 @@
 This webpage is a portfolio for Jacob L. Lewis. 
 
-Within you will find a recent photo of Jacob, a short description of him, his contact info, and some of his recent projects.
+Within this page you will find a few pictures of myself, some of my work and an About Me page where you can find a few of my profiles. Thank you for visiting my page! If you have any questions for me, please do not hesitate to reach out.
 
-This page will interact with different sized browsers, try it out!
+jacobllewis@outlook.com
 
-https://jlewis1995.github.io/JLewis-Second-Homework---Portfolio/
+https://jlewis1995.github.io/JLewis-Portfolio/
