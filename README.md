@@ -5,3 +5,5 @@ Within this page you will find a few pictures of myself, some of my work and an 
 jacobllewis@outlook.com
 
 https://jlewis1995.github.io/JLewis-Portfolio/
+
+![Screenshot](./assets/images/portfolio.PNG)
